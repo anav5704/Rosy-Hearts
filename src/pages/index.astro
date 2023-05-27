@@ -2,28 +2,11 @@
 import Layout from '../layouts/Layout.astro';
 import Cake from '../components/Cake.astro';
 
+const allCakes = await Astro.glob('../pages/cakes/*.md'); 
 ---
 
 <Layout title="Rosy Hearts">
 <h1 class="my-5 text-3xl text-center">Rosy Heart <span class="rosy font-bold">Classics</span></h1>
 <div class="grid grid-cols-3 w-4/5 m-auto gap-5">
-    <Cake 
-    img = "public/cakes/1.jpg"
-    name = "White Forest"
-    description = "Black forest but its white"
-    price = "$34.99"
-    />
-    <Cake 
-    img = "public/cakes/2.jpg"
-    name = "Choco Wood"
-    description = "Goofy ah custom name lmao"
-    price = "$34.99"
-    />
-    <Cake 
-    img = "public/cakes/3.jpg"
-    name = "Cherry Delight"
-    description = "Black forest but w more chrries"
-    price = "$34.99"
-    />
-</div>
+    {allCakes.map((cake) => <Cake {cake}/>)}
 </Layout>
