@@ -1,21 +1,21 @@
 ---
-const {cake} = Astro.props;
+const { cake } = Astro.props;
 ---
 
 <div class="col-span-1 lift rounded-lg overflow-hidden">
-    <img src={cake.frontmatter.img} alt="" class="w-full">
+    <a href={cake.url}><img src={cake.frontmatter.img} alt="" class="w-full"></a>
     <div class= "p-2">
         <p>{cake.frontmatter.name}</p>
         <p>{cake.frontmatter.description}</p>
         <div class="flex justify-between items-center">
             <p class="text-lg font font-bold">{cake.frontmatter.price}</p>
-            <a href="" class="text-white"><button>More</button></a>
+            <a href={cake.url} class="btn text-white"><button>More</button></a>
         </div>
     </div>
 </div>
 
 <style>
-    a {
+    .btn {
         border-radius: 20px;
         padding: 5px 15px;
         background: rgb(255,166,158);
