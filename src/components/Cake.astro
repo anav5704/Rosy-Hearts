@@ -1,0 +1,26 @@
+---
+const {name, img, description, price} = Astro.props;
+---
+
+<div class="col-span-1 lift rounded-lg overflow-hidden">
+    <img src={img} alt="" class="w-full">
+    <div class= "p-2">
+        <p>{name}</p>
+        <p>{description}</p>
+        <div class="flex justify-between items-center">
+            <p class="text-lg font font-bold">{price}</p>
+            <a href="" class="text-white"><button>More</button></a>
+        </div>
+    </div>
+</div>
+
+<style>
+    a {
+        border-radius: 20px;
+        padding: 5px 15px;
+        background: rgb(255,166,158);
+        background: linear-gradient(90deg, #FEAE96 0%, #FE0944 100%);
+    }
+</style>
+
+
