@@ -8,19 +8,11 @@ const { cake } = Astro.props;
         <p>{cake.frontmatter.name}</p>
         <p>{cake.frontmatter.description}</p>
         <div class="flex justify-between items-center">
-            <p class="text-lg font font-bold">{cake.frontmatter.price}</p>
-            <a href={cake.url} class="btn text-white"><button>More</button></a>
+            <p class="text-lg font font-bold">{cake.frontmatter.priceSM}</p>
+            <a href={cake.url} class="rosyy text-white"><button>More</button></a>
         </div>
     </div>
 </div>
 
-<style>
-    .btn {
-        border-radius: 20px;
-        padding: 5px 15px;
-        background: rgb(255,166,158);
-        background: linear-gradient(90deg, #FEAE96 0%, #FE0944 100%);
-    }
-</style>
 
 
