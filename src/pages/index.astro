@@ -6,11 +6,11 @@ const allCakes = await Astro.glob('../pages/cakes/*.md');
 ---
 
 <Layout title="Rosy Hearts">
-<div class="h-90v relative hero flex items-center justify-center flex-col">
+<div class="h-90v relative flex items-center justify-center flex-col overflow-hidden">
     <h1 class="mb-5 text-6xl ">Valentines Seasonal Store</h1>
    <div>
-    <a href="" class="py-2 px-4 m-2 bg-white rounded-lg"><button>Buy Cakes</button></a>
-    <a href="" class="py-2 px-4 m-2 bg-white rounded-lg"><button>More</button></a>
+    <a href="/seasonal" class="text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Buy Cakes</button></a>
+    <img src="/hero.jpg" alt="" class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10">
    </div>
 </div>
 
@@ -19,10 +19,4 @@ const allCakes = await Astro.glob('../pages/cakes/*.md');
 {allCakes.map((cake) => <Cake {cake}/>)}
 </div>
 </Layout>
-
-<style>
-    .hero {
-        background-color: #FD9CC5;
-    }
-</style>
 
