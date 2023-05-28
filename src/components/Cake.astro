@@ -2,7 +2,7 @@
 const { cake } = Astro.props;
 ---
 
-<div class="col-span-1 lift rounded-lg overflow-hidden">
+<div class="cake col-span-1 lift rounded-lg overflow-hidden flex flex-col justify-between relative">
     <a href={cake.url}><img src={cake.frontmatter.img} alt="" class="w-full"></a>
     <div class= "p-2">
         <p>{cake.frontmatter.name}</p>
@@ -13,6 +13,23 @@ const { cake } = Astro.props;
         </div>
     </div>
 </div>
+
+<style>
+    .cake:after {
+        position: absolute;
+        content: "";
+        padding: 4px;
+        font-size: 1.3rem;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: 0;
+        z-index: 99;
+        background-color: #FD9CC5;
+        clip-path: polygon(0 0, 0% 100%, 100% 0);
+        
+    }
+</style>
 
 
 

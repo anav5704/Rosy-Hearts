@@ -6,6 +6,7 @@ export interface Props {
 const { title } = Astro.props;
 import '../styles/main.css';
 import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 ---
 
 <!DOCTYPE html>
@@ -21,5 +22,6 @@ import Nav from '../components/Nav.astro';
 	<body>
         <Nav></Nav>
 		<slot />
+        <Footer></Footer>
 	</body>
 </html>

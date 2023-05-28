@@ -1,8 +1,8 @@
 ---
 layout: "../../layouts/CakePreview.astro"
-name: Cherry Delight
+name: Fruit Cake
 img: "/cakes/3.jpg"
-description: Black forest but w more cherries
+description: Chocolate cake w oranges
 priceSM: $44.99
 priceMD: $54.99
 priceLG: $64.99

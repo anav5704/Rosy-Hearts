@@ -2,9 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+    --pink: #FD9CC5;
+    --red: #FE0944;
+}
+
 .rosy {
-    background:#FD9CC5 ;
-    background: linear-gradient(to right,#FD9CC5  0%, #FE0944 100%);
+    background:var(--pink) ;
+    background: linear-gradient(to right,var(--pink)  0%, var(--red) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Leckerli One', cursive;
@@ -14,7 +19,7 @@
     border-radius: 20px;
     padding: 5px 15px;
     background: #FD9CC5;
-    background: linear-gradient(90deg, #FD9CC5 0%, #FE0944 100%);
+    background: linear-gradient(90deg, var(--pink) 0%, var(--red) 100%);
 }
 
 .lift {
