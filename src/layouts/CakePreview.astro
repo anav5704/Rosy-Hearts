@@ -19,7 +19,7 @@ const { frontmatter } = Astro.props;
 	</head>
 	<body>
         <Nav></Nav>
-        <h1 class="text-3xl text-center my-5">{frontmatter.name}</h1>
+        <h1 class="text-3xl text-center mb-5 mt-10">{frontmatter.name}</h1>
         <img src={frontmatter.img} alt="" class="h-72 m-auto">
 		<slot />
         <Price {frontmatter} />

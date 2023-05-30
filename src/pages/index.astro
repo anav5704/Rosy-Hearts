@@ -12,14 +12,45 @@ const allCakes = await Astro.glob('../pages/cakes/*.md');
 <div class="h-90v relative flex items-center justify-center flex-col overflow-hidden">
     <h1 class="mb-5 text-6xl ">Valentines Seasonal Store</h1>
    <div>
-    <a href="/seasonal" class="text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Buy Cakes</button></a>
+    <a href="/seasonal" class="text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>New Cakes</button></a>
+    <a href="#classics" class="text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Classics</button></a>
     <img src="/hero.jpg" alt="" class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10">
    </div>
 </div>
 
-<h1 class="my-5 text-3xl text-center">Rosy Heart <span class="rosy">Classics</span></h1>
+<h1 class="mb-5 mt-10 text-3xl text-center">The<span class="rosy"> Home </span>of Cakes</h1>
+<div class="grid grid-cols-3 w-4/5 m-auto pt-12">
+    <div class="cakes grid col-span-1 w-4/5 m-auto gap-5 ">
+        <div class="col-span-1 relative rounded-lg lift lit">
+            <div class=" lit rounded-full h-24 w-24 absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 grid items-center justify-center"><img src="/icons/r1.png" alt="" class="h-14 w-14"></div>
+            <div class="p-3 mt-12 ">We quite literally make the best cakes in Fiji no cap. Cakes 2000 ain't got shit on us.</div>
+        </div>
+    </div>
+    <div class="cakes grid col-span-1 w-4/5 m-auto gap-5  ">
+        <div class="col-span-1 relative rounded-lg lift lit">
+            <div class=" lit rounded-full h-24 w-24 absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 grid items-center justify-center"><img src="/icons/r2.png" alt="" class="h-14 w-14"></div>
+            <div class="p-3 mt-12 ">We do custom orders. Either visit a branch and chose or send details for a new custom cake.</div>
+        </div>
+    </div>
+    <div class="cakes grid col-span-1 w-4/5 m-auto gap-5  ">
+        <div class="col-span-1 relative rounded-lg lift lit">
+            <div class=" lit rounded-full h-24 w-24 absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 grid items-center justify-center"><img src="/icons/r3.png" alt="" class="h-14 w-14"></div>
+            <div class="p-3 mt-12 ">We provide same hour deliery to all locations in Suva and Naurosi: Powerd by FijiEats.</div>
+        </div>
+    </div>
+</div>
+
+<h1 id="classics" class="mb-5 mt-10 text-3xl text-center">Rosy Heart <span class="rosy">Classics</span></h1>
 <div class="cakes grid grid-cols-3 w-4/5 m-auto gap-5">
 {allCakes.map((cake) => <Cake {cake}/>)}
 </div>
 </Layout>
+
+<style>
+     .lit {
+        background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #FD9CC5, #FE0944) border-box;
+        border: 3px solid transparent;
+    }
+</style>
 
