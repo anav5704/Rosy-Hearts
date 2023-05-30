@@ -1,10 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');@tailwind base;
+@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
+@import url('https://fonts.cdnfonts.com/css/abcya');                                                
 @tailwind components;
 @tailwind utilities;
 
 :root {
     --pink: #FD9CC5;
     --red: #FE0944;
+}
+
+* {
+    font-family: 'ABCYa', sans-serif;
+                                                
 }
 
 .rosy {

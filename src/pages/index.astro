@@ -6,6 +6,9 @@ const allCakes = await Astro.glob('../pages/cakes/*.md');
 ---
 
 <Layout title="Rosy Hearts">
+    <div class="h-full w-full top-0 fixed bg-red-300 z-50 flex justify-center items-center sm:block md:hidden">
+        <p class="p-5 text-2xl">The mobile version of this website is still under developement. Please use the desktop cersoin for the time being. Thank you.</p>
+    </div>
 <div class="h-90v relative flex items-center justify-center flex-col overflow-hidden">
     <h1 class="mb-5 text-6xl ">Valentines Seasonal Store</h1>
    <div>

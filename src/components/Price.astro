@@ -3,7 +3,7 @@ const { frontmatter } = Astro.props;
 ---
 
 <div class="w-4/12 mx-auto grid grid-cols-2 gap-5">
-    <div class="col-span-2 lift py-5">
+    <div class="col-span-2 lift py-5 lit rounded-lg">
         <div class="flex justify-evenly ">
                 <div class="">
                     <img src="/icons/sm.png" alt="" class="icon scale-75 origin-bottom">
@@ -19,7 +19,7 @@ const { frontmatter } = Astro.props;
                 </div>
         </div>
     </div>
-    <div class="col-span-1 lift p-3">
+    <div class="col-span-1 lift p-3 rounded-lg">
         <p class="my-1 text-lg font-semibold text-cen">Ingredients</p>
         <li>Whipped cream</li>
         <li>Cherries (pitted)</li>
@@ -57,6 +57,12 @@ const { frontmatter } = Astro.props;
     .icon {
         width: 50px;
         height: 50px;
+    }
+
+    .lit {
+        background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #FD9CC5, #FE0944) border-box;
+        border: 3px solid transparent;
     }
 
 </style>

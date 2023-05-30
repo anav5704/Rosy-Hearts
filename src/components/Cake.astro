@@ -8,7 +8,7 @@ const { cake } = Astro.props;
         <p>{cake.frontmatter.name}</p>
         <p>{cake.frontmatter.description}</p>
         <div class="flex justify-between items-center">
-            <p class="text-lg font font-bold">{cake.frontmatter.priceSM}</p>
+            <p class="text-lg font font-semibold">{cake.frontmatter.priceSM}</p>
             <a href={cake.url} class="rosyy text-white"><button>More</button></a>
         </div>
     </div>
@@ -24,7 +24,7 @@ const { cake } = Astro.props;
         height: 50px;
         top: 0;
         left: 0;
-        z-index: 99;
+        z-index: 9;
         background-color: #FD9CC5;
         clip-path: polygon(0 0, 0% 100%, 100% 0);
         
