@@ -1,6 +1,7 @@
 ---
 import '../styles/main.css';
 import Nav from '../components/Nav.astro';
+import Footer from '../components/Footer.astro';
 import Price from '../components/Price.astro';
 
 const { frontmatter } = Astro.props;
@@ -23,6 +24,7 @@ const { frontmatter } = Astro.props;
 		<slot />
         <Price {frontmatter} />
 	</body>
+    <Footer></Footer>
 </html>
 
 

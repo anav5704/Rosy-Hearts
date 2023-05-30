@@ -2,26 +2,44 @@
 const { frontmatter } = Astro.props;
 ---
 
-<div class="rounded-lg flex w-1/2 m-auto items-center p-5 my-5 lift ">
-  <div class="flex justify-evenly w-3/4">
-        <div class="">
-            <img src="/icons/sm.png" alt="" class="icon scale-75 origin-bottom">
-            <p class="text-lg font-bold">{frontmatter.priceSM}</p>
+<div class="w-4/12 mx-auto grid grid-cols-2 gap-5">
+    <div class="col-span-2 lift py-5">
+        <div class="flex justify-evenly ">
+                <div class="">
+                    <img src="/icons/sm.png" alt="" class="icon scale-75 origin-bottom">
+                    <p class="text-lg font-semibold">{frontmatter.priceSM}</p>
+                </div>
+                <div class="">
+                    <img src="/icons/md.png" alt="" class="icon scale-90 origin-bottom">
+                    <p class="text-lg font-semibold">{frontmatter.priceMD}</p>
+                </div>
+                <div class="">
+                    <img src="/icons/lg.png" alt="" class="icon">
+                    <p class="text-lg font-semibold">{frontmatter.priceLG}</p>
+                </div>
         </div>
-        <div class="">
-            <img src="/icons/md.png" alt="" class="icon scale-90 origin-bottom">
-            <p class="text-lg font-bold">{frontmatter.priceMD}</p>
-        </div>
-        <div class="">
-            <img src="/icons/lg.png" alt="" class="icon">
-            <p class="text-lg font-bold">{frontmatter.priceLG}</p>
-        </div>
-  </div>
-  <div class="w-1/4 flex flex-col items-center">
-    <a class="m-1 w-24 text-center btn text-white" href=""><button>Deliver</button></a>
-    <a class="m-1 w-24 text-center btn text-white" href=""><button>Order</button></a>
-  </div>
-
+    </div>
+    <div class="col-span-1 lift p-3">
+        <p class="my-1 text-lg font-semibold text-cen">Ingredients</p>
+        <li>Whipped cream</li>
+        <li>Cherries (pitted)</li>
+        <li>Cherry syrup</li>
+        <li>Dark chocolate</li>
+    </div>
+    <div class="rounded-lg p-3 col-span-1 lift">
+        <p class="my-1 text-lg font-semibold text-cen">Dietary Info</p>
+        <li>Contains gluten</li>
+        <li>Contains dairy</li>
+        <li>Contains eggs</li>
+        <li>May contain nuts</li>
+    </div>
+    <div class="col-span-2 p-3 lift rounded-lg flex justify-between">
+        <p>Want this cake?</p>
+       <div>
+        <a href="" class="rosyy text-white mr-3"><button>Order</button></a>
+        <a href="" class="rosyy text-white"><button>Delivery</button></a>
+       </div>
+    </div>
 </div>
 
 <style>
