@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const gallery = ["/cakes/7.jpg", "/cakes/7.jpg", "/cakes/7.jpg"];
+
+---
+
+<Layout title="Rosy Hearts">
+
+<h1 class="mb-5 mt-10 text-3xl text-center">Our<span class="rosy"> Delicious </span>Cakes</h1>
+
+{gallery.map((image) => <img src={image}>)}
+
+<style>
+     .lit {
+        background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #FD9CC5, #FE0944) border-box;
+        border: 3px solid transparent;
+    }
+</style>
+
