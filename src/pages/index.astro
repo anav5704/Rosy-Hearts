@@ -1,7 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Cake from '../components/Cake.astro';
-import Why from '../components/Why.astro';
+import Box from '../components/Box.astro';
 
 const allCakes = await Astro.glob('../pages/cakes/*.md'); 
 const seaseoon = "Valentines";
@@ -22,7 +22,21 @@ const img = "/hero.jpg";
 </div>
 
 <h1 class="mb-5 mt-10 text-3xl text-center">The<span class="rosy"> Home </span>of Cakes</h1>
-<Why />
+
+<div class="grid grid-cols-3 w-4/5 m-auto gap-5 pt-12">
+    <Box 
+    icon="/icons/r1.png"
+    text="We are quite literally make the best cakes in Fiji no cap. Cakes 2000 ain't got shit on us."
+    />
+    <Box 
+    icon="/icons/r2.png"
+    text="We do custom orders. Either visit a branch and chose or send details for a new custom cake."
+    />
+    <Box 
+    icon="/icons/r3.png"
+    text="We provide same hour deliery to all locations in Suva and Naurosi: Powerd by FijiEats."
+    />
+</div>
 
 <h1 id="classics" class="mb-5 mt-10 text-3xl text-center">Rosy Heart <span class="rosy">Classics</span></h1>
 <div class="cakes grid grid-cols-3 w-4/5 m-auto gap-5">
