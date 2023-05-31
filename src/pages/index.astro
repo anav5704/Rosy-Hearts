@@ -1,6 +1,7 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Cake from '../components/Cake.astro';
+import Why from '../components/Why.astro';
 
 const allCakes = await Astro.glob('../pages/cakes/*.md'); 
 const seaseoon = "Valentines";
@@ -21,26 +22,7 @@ const img = "/hero.jpg";
 </div>
 
 <h1 class="mb-5 mt-10 text-3xl text-center">The<span class="rosy"> Home </span>of Cakes</h1>
-<div class="grid grid-cols-3 w-4/5 m-auto pt-12">
-    <div class="cakes grid col-span-1 w-4/5 m-auto gap-5 ">
-        <div class="col-span-1 relative rounded-lg lift lit">
-            <div class=" lit rounded-full h-24 w-24 absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 grid items-center justify-center"><img src="/icons/r1.png" alt="" class="h-14 w-14"></div>
-            <div class="p-3 mt-12 ">We are quite literally make the best cakes in Fiji no cap. Cakes 2000 ain't got shit on us.</div>
-        </div>
-    </div>
-    <div class="cakes grid col-span-1 w-4/5 m-auto gap-5  ">
-        <div class="col-span-1 relative rounded-lg lift lit">
-            <div class=" lit rounded-full h-24 w-24 absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 grid items-center justify-center"><img src="/icons/r2.png" alt="" class="h-14 w-14"></div>
-            <div class="p-3 mt-12 ">We do custom orders. Either visit a branch and chose or send details for a new custom cake.</div>
-        </div>
-    </div>
-    <div class="cakes grid col-span-1 w-4/5 m-auto gap-5  ">
-        <div class="col-span-1 relative rounded-lg lift lit">
-            <div class=" lit rounded-full h-24 w-24 absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 grid items-center justify-center"><img src="/icons/r3.png" alt="" class="h-14 w-14"></div>
-            <div class="p-3 mt-12 ">We provide same hour deliery to all locations in Suva and Naurosi: Powerd by FijiEats.</div>
-        </div>
-    </div>
-</div>
+<Why />
 
 <h1 id="classics" class="mb-5 mt-10 text-3xl text-center">Rosy Heart <span class="rosy">Classics</span></h1>
 <div class="cakes grid grid-cols-3 w-4/5 m-auto gap-5">
@@ -48,11 +30,4 @@ const img = "/hero.jpg";
 </div>
 </Layout>
 
-<style>
-     .lit {
-        background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, #FD9CC5, #FE0944) border-box;
-        border: 3px solid transparent;
-    }
-</style>
 

@@ -3,7 +3,9 @@ const { cake } = Astro.props;
 ---
 
 <div class="cake col-span-1 lift rounded-lg overflow-hidden flex flex-col justify-between relative">
-    <a href={cake.url}><img src={cake.frontmatter.img} alt="" class="w-full"></a>
+    <div class="h-56 load overflow-hidden ">
+        <a href={cake.url} class=""><img src={cake.frontmatter.img} alt="" class="h-full w-full object-cover object-center"></a>
+    </div>
     <div class= "p-2">
         <p>{cake.frontmatter.name}</p>
         <p>{cake.frontmatter.description}</p>

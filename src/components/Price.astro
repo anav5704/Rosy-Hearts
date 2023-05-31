@@ -2,7 +2,7 @@
 const { frontmatter } = Astro.props;
 ---
 <!-- <pre>{JSON.stringify(frontmatter, null, 2)}</pre> -->
-<div class="w-4/12 mx-auto grid grid-cols-2 gap-5">
+<div class="w-4/12 mx-auto grid grid-cols-2 gap-5 mt-5">
     <div class="col-span-2 lift py-5 lit rounded-lg">
         <div class="flex justify-evenly ">
                 <div class="">
@@ -40,14 +40,8 @@ const { frontmatter } = Astro.props;
     .icon {
         width: 50px;
         height: 50px;
-    }
 
-    .lit {
-        background: linear-gradient(white, white) padding-box,
-              linear-gradient(to right, #FD9CC5, #FE0944) border-box;
-        border: 3px solid transparent;
     }
-
 </style>
 
 

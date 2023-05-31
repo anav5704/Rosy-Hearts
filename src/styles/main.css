@@ -22,6 +22,12 @@
     font-family: 'Leckerli One', cursive;
 }
 
+.lit {
+    background: linear-gradient(white, white) padding-box,
+          linear-gradient(to right, #FD9CC5, #FE0944) border-box;
+    border: 3px solid transparent;
+}
+
 .rosyy {
     border-radius: 20px;
     padding: 5px 15px;
@@ -49,4 +55,22 @@
 ::-webkit-scrollbar-thumb:hover {
     background: linear-gradient(90deg, var(--pink) 0%, var(--red) 100%);
 
+}
+
+.load {
+    animation: load 1.3s ease infinite ;
+}
+
+@keyframes load {
+    0% {
+        background-color: white;
+    }
+
+    50% {
+        background-color: rgb(224, 224, 224);
+    }
+
+    100% {
+        background-color: white;
+    }
 }
