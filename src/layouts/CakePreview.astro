@@ -20,11 +20,22 @@ const { frontmatter } = Astro.props;
 	<body>
         <Nav></Nav>
         <h1 class="text-3xl text-center mb-5 mt-10">{frontmatter.name}</h1>
-        <img src={frontmatter.img} alt="" class="h-72 m-auto">
-		<slot />
+       <div class="relative ">
+            <img src={frontmatter.img} alt="" class="w-96 m-auto">
+            <div class="comment absolute w-40 top-1/2 -translate-y-1/2 right-1/6">
+                <p class="p-2">{frontmatter.comment}</p>
+                <img src="/icons/arrow.png" alt="" class="rotate-180 h-20 w-20 ">
+            </div>
+       </div>
         <Price {frontmatter} />
 	</body>
     <Footer></Footer>
 </html>
+
+<style>
+    .comment {
+        right: calc(50% - 384px );
+    }
+</style>
 
 

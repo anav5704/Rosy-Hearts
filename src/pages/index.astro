@@ -3,6 +3,8 @@ import Layout from '../layouts/Layout.astro';
 import Cake from '../components/Cake.astro';
 
 const allCakes = await Astro.glob('../pages/cakes/*.md'); 
+const seaseoon = "Valentines";
+const img = "/hero.jpg";
 ---
 
 <Layout title="Rosy Hearts">
@@ -10,11 +12,11 @@ const allCakes = await Astro.glob('../pages/cakes/*.md');
         <p class="p-5 text-2xl">The mobile version of this website is still under developement. Please use the desktop cersoin for the time being. Thank you.</p>
     </div>
 <div class="h-90v relative flex items-center justify-center flex-col overflow-hidden">
-    <h1 class="mb-5 text-6xl ">Valentines Seasonal Store</h1>
+    <h1 class="mb-5 text-6xl ">{seaseoon} Seasonal Store</h1>
    <div>
     <a href="/seasonal" class="text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>New Cakes</button></a>
     <a href="#classics" class="text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Classics</button></a>
-    <img src="/hero.jpg" alt="" class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10">
+    <img src={img} alt="" class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10">
    </div>
 </div>
 

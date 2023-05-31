@@ -1,59 +1,42 @@
 ---
 const { frontmatter } = Astro.props;
 ---
-
+<!-- <pre>{JSON.stringify(frontmatter, null, 2)}</pre> -->
 <div class="w-4/12 mx-auto grid grid-cols-2 gap-5">
     <div class="col-span-2 lift py-5 lit rounded-lg">
         <div class="flex justify-evenly ">
                 <div class="">
                     <img src="/icons/sm.png" alt="" class="icon scale-75 origin-bottom">
-                    <p class="text-lg font-semibold">{frontmatter.priceSM}</p>
+                    <p class="text-lg font-semibold">{frontmatter.price[0]}</p>
                 </div>
                 <div class="">
                     <img src="/icons/md.png" alt="" class="icon scale-90 origin-bottom">
-                    <p class="text-lg font-semibold">{frontmatter.priceMD}</p>
+                    <p class="text-lg font-semibold">{frontmatter.price[1]}</p>
                 </div>
                 <div class="">
                     <img src="/icons/lg.png" alt="" class="icon">
-                    <p class="text-lg font-semibold">{frontmatter.priceLG}</p>
+                    <p class="text-lg font-semibold">{frontmatter.price[2]}</p>
                 </div>
         </div>
     </div>
     <div class="col-span-1 lift p-3 rounded-lg">
         <p class="my-1 text-lg font-semibold text-cen">Ingredients</p>
-        <li>Whipped cream</li>
-        <li>Cherries (pitted)</li>
-        <li>Cherry syrup</li>
-        <li>Dark chocolate</li>
+        {frontmatter.ing.map((ingredient) => <li>{ingredient}</li>)}
     </div>
     <div class="rounded-lg p-3 col-span-1 lift">
         <p class="my-1 text-lg font-semibold text-cen">Dietary Info</p>
-        <li>Contains gluten</li>
-        <li>Contains dairy</li>
-        <li>Contains eggs</li>
-        <li>May contain nuts</li>
+        {frontmatter.diet.map((dietaryInfo) => <li>{dietaryInfo}</li>)}
     </div>
     <div class="col-span-2 p-3 lift rounded-lg flex justify-between">
         <p>Want this cake?</p>
        <div>
-        <a href="" class="rosyy text-white mr-3"><button>Order</button></a>
-        <a href="" class="rosyy text-white"><button>Delivery</button></a>
+        <a href="" class="py-2 px-4 rosyy text-white mr-3"><button>Order</button></a>
+        <a href="" class="py-2 px-4 rosyy text-white"><button>Delivery</button></a>
        </div>
     </div>
 </div>
 
 <style>
-    .btn {
-        border-radius: 20px;
-        padding: 5px 15px;
-        background: #FD9CC5;
-        transition: all .3s ease;
-    }
-
-    .btn:hover {
-        background: #FE0944;
-    }
-
     .icon {
         width: 50px;
         height: 50px;

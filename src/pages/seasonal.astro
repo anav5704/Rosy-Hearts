@@ -3,10 +3,12 @@ import Layout from '../layouts/Layout.astro';
 import Cake from '../components/Cake.astro';
 
 const allCakes = await Astro.glob('../pages/seasonal/*.md'); 
+const seaseoon = "Valentines";
+
 ---
 
 <Layout title="Rosy Hearts">
-<h1 class="my-5 text-3xl text-center">Our<span class="rosy"> Valentines </span>Cakes</h1>
+<h1 class="my-5 text-3xl text-center">Our<span class="rosy"> {seaseoon} </span>Cakes</h1>
 <div class="cakes grid grid-cols-3 w-4/5 m-auto gap-5">
 {allCakes.map((cake) => <Cake {cake}/>)}
 </div>
