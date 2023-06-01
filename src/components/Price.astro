@@ -21,11 +21,11 @@ const { frontmatter } = Astro.props;
     </div>
     <div class="md:col-span-1 lift p-3 rounded-lg">
         <p class="my-1 text-lg font-semibold text-cen">Ingredients</p>
-        {frontmatter.ing.map((ingredient) => <p>{ingredient}</p>)}
+        {frontmatter.ing.map((ingredient) => <p class="text-sm">{ingredient}</p>)}
     </div>
     <div class="rounded-lg p-3 md:col-span-1 lift">
         <p class="my-1 text-lg font-semibold text-cen">Dietary Info</p>
-        {frontmatter.diet.map((dietaryInfo) => <p>{dietaryInfo}</p>)}
+        {frontmatter.diet.map((dietaryInfo) => <p class="text-sm">{dietaryInfo}</p>)}
     </div>
     <div class="col-span-2 p-3 lift rounded-lg flex justify-between">
         <p>Want this cake?</p>
