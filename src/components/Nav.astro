@@ -14,7 +14,7 @@
     <div>
         <div  class="cursor-pointer rosy text-3xl" id="btn">Rosy Hearts</div>
     </div>
-    <ul class="hidden ul1 absolute ul3 text-center z-10" id="nav">
+    <ul class="lit hidden ul1 absolute ul3 text-center z-10 py-2" id="nav">
         <li class="p-2"><a href="/">Home</a></li>
         <li class="p-2"><a href="/cakes">Cakes</a></li>
         <li class="p-2"><a href="/about">About</a></li>
@@ -37,9 +37,10 @@
     }
 
     .ul3 {
-        top: 10vh;
+        top: calc(10vh + 20px);
         background-color: white;
-        width: 100%;
+        width: 90%;
+        border-radius: 10px;
     }
 </style>
 
