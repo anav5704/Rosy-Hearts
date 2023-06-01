@@ -29,6 +29,7 @@
 }
 
 .rosyy {
+    transition: all .3s ease;
     border-radius: 20px;
     padding: 5px 15px;
     background: #FD9CC5;

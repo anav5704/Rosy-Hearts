@@ -1,5 +1,18 @@
 <footer class="flex justify-center h-10v items-center text-xl  lift mt-10 bg-pink-300">
-  <p>Made w 💗 by <a class="text-white" href="https://www.instagram.com/anav.webdev/">Anav</a></p>
+  <p> Copyright <span id="year"></span> | RosyHearts.com by <a class="text-white" href="https://www.instagram.com/anav.webdev/">Anav</a></p>
 </footer>
+
+<style>
+    footer {
+        padding: 5px 15px;
+        background: #FD9CC5;
+        background: linear-gradient(90deg, var(--pink) 0%, var(--red) 100%);
+    }
+</style>
+
+<script>
+    const date = new Date();
+    document.getElementById("year").innerHTML = date.getFullYear().toString();
+</script>
 
 
