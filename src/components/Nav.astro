@@ -1,4 +1,4 @@
-<nav class="flex justify-center h-10v items-center text-xl  lift bg-white">
+<nav class="hidden md:flex justify-center h-10v items-center text-xl  lift bg-white">
     <ul class="flex ul1">
         <li class="mr-8"><a href="/">Home</a></li>
         <li class="mr-8"><a href="/cakes">Cakes</a></li>
@@ -7,6 +7,18 @@
     <ul class="flex ul2">
         <li class="ml-8"><a href="/about">About</a></li>
         <li class="ml-8"><a href="/contact">Contact</a></li>
+    </ul>
+</nav>
+
+<nav class="flex flex-col justify-center h-10v items-center text-xl  lift bg-white relative md:hidden">
+    <div>
+        <div  class="cursor-pointer rosy text-3xl" id="btn">Rosy Hearts</div>
+    </div>
+    <ul class="hidden ul1 absolute ul3 text-center z-10" id="nav">
+        <li class="p-2"><a href="/">Home</a></li>
+        <li class="p-2"><a href="/cakes">Cakes</a></li>
+        <li class="p-2"><a href="/about">About</a></li>
+        <li class="p-2"><a href="/contact">Contact</a></li>
     </ul>
 </nav>
 
@@ -23,5 +35,17 @@
     .ul2 a:hover {
         color: #FE0944;
     }
+
+    .ul3 {
+        top: 10vh;
+        background-color: white;
+        width: 100%;
+    }
 </style>
+
+<script>
+    document.getElementById("btn").addEventListener("click", () => {
+    document.getElementById("nav").classList.toggle("hidden")
+    })
+</script>
 

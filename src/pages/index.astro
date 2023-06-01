@@ -9,21 +9,19 @@ const img = "/hero.jpg";
 ---
 
 <Layout title="Rosy Hearts">
-    <div class="h-full w-full top-0 fixed bg-red-300 z-50 flex justify-center items-center sm:block md:hidden">
-        <p class="p-5 text-2xl">The mobile version of this website is still under developement. Please use the desktop cersoin for the time being. Thank you.</p>
-    </div>
-<div class="h-90v relative flex items-center justify-center flex-col overflow-hidden">
-    <h1 class="mb-5 text-6xl ">{seaseoon} Seasonal Store</h1>
+
+<div class=" h-90v relative flex items-center justify-center flex-col overflow-hidden">
+    <h1 class="mb-5 text-3xl md:text-6xl ">{seaseoon} Seasonal Store</h1>
    <div>
-    <a href="/seasonal" class="text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>New Cakes</button></a>
-    <a href="#classics" class="text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Classics</button></a>
+    <a href="/seasonal" class="text-lg md:text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>New Cakes</button></a>
+    <a href="#classics" class="text-lg md:text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Classics</button></a>
     <img src={img} alt="" class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10">
    </div>
 </div>
 
 <h1 class="mb-5 mt-10 text-3xl text-center">The<span class="rosy"> Home </span>of Cakes</h1>
 
-<div class="grid grid-cols-3 w-4/5 m-auto gap-5 pt-12">
+<div class="grid grid-cols-1 md:grid-cols-3 w-4/5 m-auto gap-5 md:pt-12">
     <Box 
     icon="/icons/r1.png"
     text="We are quite literally make the best cakes in Fiji no cap. Cakes 2000 ain't got shit on us."
@@ -39,7 +37,7 @@ const img = "/hero.jpg";
 </div>
 
 <h1 id="classics" class="mb-5 mt-10 text-3xl text-center">Rosy Heart <span class="rosy">Classics</span></h1>
-<div class="cakes grid grid-cols-3 w-4/5 m-auto gap-5">
+<div class="cakes grid grid-cols-1 md:grid-cols-3 w-4/5 m-auto gap-5">
 {allCakes.map((cake) => <Cake {cake}/>)}
 </div>
 </Layout>

@@ -2,7 +2,7 @@
 const { frontmatter } = Astro.props;
 ---
 <!-- <pre>{JSON.stringify(frontmatter, null, 2)}</pre> -->
-<div class="w-4/12 mx-auto grid grid-cols-2 gap-5 mt-5">
+<div class="w-10/12 md:w-4/12 mx-auto grid grid-cols-2 gap-5 mt-5">
     <div class="col-span-2 lift py-5 lit rounded-lg">
         <div class="flex justify-evenly ">
                 <div class="">
@@ -19,11 +19,11 @@ const { frontmatter } = Astro.props;
                 </div>
         </div>
     </div>
-    <div class="col-span-1 lift p-3 rounded-lg">
+    <div class="md:col-span-1 lift p-3 rounded-lg">
         <p class="my-1 text-lg font-semibold text-cen">Ingredients</p>
         {frontmatter.ing.map((ingredient) => <li>{ingredient}</li>)}
     </div>
-    <div class="rounded-lg p-3 col-span-1 lift">
+    <div class="rounded-lg p-3 md:col-span-1 lift">
         <p class="my-1 text-lg font-semibold text-cen">Dietary Info</p>
         {frontmatter.diet.map((dietaryInfo) => <li>{dietaryInfo}</li>)}
     </div>
