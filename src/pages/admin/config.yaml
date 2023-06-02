@@ -19,3 +19,5 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Image", name: "img", widget: "image"}
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Comment", name: "comment", widget: "string"}
+      - {label: "Tags", name: "tags", widget: "list", default: "cake"}
+      - {label: "Price", name: "price", widget: "list"}
