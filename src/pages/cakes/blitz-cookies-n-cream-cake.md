@@ -5,9 +5,9 @@ description: 'Indulge your senses in a symphony of flavors '
 comment: 'A delicious pick-up for all occasions, sure to fill up your taste-buds!'
 tags: league
 price:
-  - $45.99
-  - $54.90
-  - $55.09
+  - $69.99
+  - $79.90
+  - $89.09
 ing:
   - All-purpose Flour
   - Unsweetened Cocoa
