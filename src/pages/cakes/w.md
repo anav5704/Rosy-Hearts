@@ -1,16 +1,24 @@
 ---
-name: w
+name: Rudr Cake (GAY)
 img: /cakes/8.jpg
-description: w
-comment: w
+description: This cake was inspired by rudy boy
+comment: 'Gayness aside. its a nice cock, I mean cake.'
 tags:
   - cake
+  - classic
 price:
-  - w
+  - $69.99. $70.99
+  - $71.99
 ing:
-  - w
+  - Cum
+  - more cum
+  - some more cum
+  - yep...cum again
 diet:
-  - w
+  - chances of impregnation
+  - may contain "milk"
+  - high in cals
+  - high in protein
 layout: ../../layouts/CakePreview.astro
 ---
 
