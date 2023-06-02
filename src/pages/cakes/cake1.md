@@ -1,5 +1,5 @@
 ---
-name: Black Forestt
+name: Black Forest
 img: /cakes/1.jpg
 description: Black forest. Thats it
 comment: Lowkey the most overrated Cake
