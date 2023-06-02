@@ -1,7 +1,7 @@
 backend:
   name: git-gateway
   repo: https://github.com/anav5704/Rosy-Hearts # Path to your Github repository
-  branch: master # Branch to update (master by default)
+  branch: main # Branch to update (master by default)
 
 media_folder: "public/cakes" # Folder where user uploaded files should go
 public_folder: "/cakes"
