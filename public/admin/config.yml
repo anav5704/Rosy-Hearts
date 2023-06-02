@@ -20,7 +20,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Description", name: "description", widget: "string"}
       - {label: "Comment", name: "comment", widget: "string"}
       - {label: "Tags", name: "tags", widget: "select", options: ["classic", "seasonal", "league"]}
-      - {label: "Price", name: "price", widget: "list", default: ["Small, Medium, Large"]}
+      - {label: "Price", name: "price", widget: "list", default: ["Small", "Medium", "Large"]}
       - {label: "Ingredients", name: "ing", widget: "list", default: "4 ingredients seperated by commas (,)"}
       - {label: "Dietary Information", name: "diet", widget: "list", default: "4 facts seperated by commas (,)"}
       - {label: "Layout", name: "layout", widget: "string", default: '../../layouts/CakePreview.astro'}    
