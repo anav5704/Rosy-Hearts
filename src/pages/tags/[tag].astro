@@ -1,0 +1,22 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+    const allPosts = await Astro.glob('../cakes/*.md'); 
+  return [
+    { params: { tag: "classic" }, props: {posts: allPosts} },
+    { params: { tag: "seasonal" }, props: {posts: allPosts}},
+    ]
+}
+
+const { tag } = Astro.params;
+const { posts } = Astro.props;
+const filteredPosts = posts.filter((post) => post.frontmatter.tags.includes(tag));
+---
+
+<Layout title={tag}>
+  <p>Posts tagged with {tag}</p>
+  <ul>
+    {filteredPosts.map((post) => <li><a href={post.url}>{post.frontmatter.name}</a></li>)}
+  </ul>
+</Layout>

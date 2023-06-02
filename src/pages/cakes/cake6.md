@@ -7,3 +7,5 @@ comment: This one is a massive  hit or miss
 price: [$34.99,  $44.99,  $54.99]
 ing: ["Whipped cream", "Fresh strawberries",  "Cherry syrup", "Dark chocolate"]
 diet: ["Contains gluten", "Contains dairy", "Contains eggs", "May contain nuts"]
+tags: ["cake", "classic"]
+---

@@ -2,7 +2,9 @@
 import Layout from '../layouts/Layout.astro';
 import Cake from '../components/Cake.astro';
 
-const allCakes = await Astro.glob('../pages/seasonal/*.md'); 
+const cakes = await Astro.glob('../pages/cakes/*.md'); 
+const seasonalCakes = cakes.filter((post) => post.frontmatter.tags.includes("seasonal"));
+
 const seaseoon = "Valentines";
 
 ---
@@ -10,7 +12,7 @@ const seaseoon = "Valentines";
 <Layout title="Rosy Hearts">
 <h1 class="my-5 text-3xl text-center">Our<span class="rosy"> {seaseoon} </span>Cakes</h1>
 <div class="cakes grid grid-cols-1 md:grid-cols-3 w-4/5 m-auto gap-5">
-{allCakes.map((cake) => <Cake {cake}/>)}
+{seasonalCakes.map((cake) => <Cake {cake}/>)}
 </div>
 </Layout>
 

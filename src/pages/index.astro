@@ -3,7 +3,9 @@ import Layout from '../layouts/Layout.astro';
 import Cake from '../components/Cake.astro';
 import Box from '../components/Box.astro';
 
-const allCakes = await Astro.glob('../pages/cakes/*.md'); 
+const cakes = await Astro.glob('../pages/cakes/*.md'); 
+const classicCakes = cakes.filter((post) => post.frontmatter.tags.includes("classic"));
+
 const seaseoon = "Valentines";
 const img = "/hero.jpg";
 ---
@@ -37,9 +39,11 @@ const img = "/hero.jpg";
 </div>
 
 <h1 id="classics" class="mb-5 mt-10 text-3xl text-center">Rosy Heart <span class="rosy">Classics</span></h1>
+
 <div class="cakes grid grid-cols-1 md:grid-cols-3 w-4/5 m-auto gap-5">
-{allCakes.map((cake) => <Cake {cake}/>)}
+    {classicCakes.map((cake) => <Cake {cake}/>)}
 </div>
+
 </Layout>
 
 
