@@ -21,7 +21,7 @@ const { frontmatter } = Astro.props;
         <Nav></Nav>
         <h1 class="text-3xl text-center mb-5 mt-10">{frontmatter.name}</h1>
        <div class="relative ">
-            <img src={frontmatter.img} alt="" class="w-96 m-auto">
+            <img src={frontmatter.img} alt="" class="w-96 m-auto rounded-lg lift">
             <div class="md:block hidden comment absolute w-40 top-1/2 -translate-y-1/2 right-1/6">
                 <p class="p-2">{frontmatter.comment}</p>
                 <img src="/icons/arrow.png" alt="" class="rotate-180 h-20 w-20 ">
