@@ -19,5 +19,5 @@ diet:
     "Contains eggs",
     "Contains nuts"
   ]
-tags: ["cake", "classic"]
+tags: ["classic"]
 ---

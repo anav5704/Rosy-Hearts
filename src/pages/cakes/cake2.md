@@ -7,5 +7,5 @@ comment: Its alright, can be better
 price: [$34.99, $44.99, $54.99]
 ing: ["All-purpose flour", "Granulated sugar", "Unsalted butter", "Cocoa powder"]
 diet: ["Contains gluten", "Contains dairy", "Contains eggs"]
-tags: ["cake", "classic"]
+tags: ["classic"]
 ---

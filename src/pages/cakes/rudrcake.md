@@ -4,8 +4,7 @@ img: /cakes/8.jpg
 description: This cake was inspired by rudy boy
 comment: 'Gayness aside. its a nice cock, I mean cake.'
 tags:
-  - cake
-  - classic
+  - league
 price:
   - $69.99
   - $70.99

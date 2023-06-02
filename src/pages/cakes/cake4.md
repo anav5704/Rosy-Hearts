@@ -18,5 +18,5 @@ diet:
     "Contains dairy",
     "Contains eggs"
     ]
-tags: ["cake", "classic"]
+tags: ["classic"]
 ---

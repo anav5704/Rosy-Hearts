@@ -4,7 +4,6 @@ img: /cakes/1.jpg
 description: Black forest. Thats it
 comment: Lowkey the most overrated Cake
 tags:
-  - cake
   - classic
 price:
   - $34.99
