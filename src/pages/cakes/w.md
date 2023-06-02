@@ -7,7 +7,8 @@ tags:
   - cake
   - classic
 price:
-  - $69.99. $70.99
+  - $69.99
+  - $70.99
   - $71.99
 ing:
   - Cum
