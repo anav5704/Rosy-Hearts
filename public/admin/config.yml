@@ -3,7 +3,7 @@ backend:
   repo: https://github.com/anav5704/Rosy-Hearts # Path to your Github repository
   branch: main # Branch to update (master by default)
 
-media_folder: "src/cakes" # Folder where user uploaded files should go
+media_folder: "public/cakes" # Folder where user uploaded files should go
 public_folder: "/cakes"
 
 collections: # A list of collections the CMS should be able to edit
