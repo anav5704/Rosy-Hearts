@@ -9,7 +9,7 @@ const { cake } = Astro.props;
     <div class= "p-2">
         <p>{cake.frontmatter.name}</p>
         <p>{cake.frontmatter.description}</p>
-        <div class="flex justify-between items-center">
+        <div class="flex justify-between items-center mt-2">
             <p class="text-lg font font-semibold">{cake.frontmatter.price[0]}</p>
             <a href={cake.url} class="rosyy text-white"><button>More</button></a>
         </div>
