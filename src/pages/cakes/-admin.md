@@ -1,17 +1,22 @@
 ---
 name: '''admin--'
 img: /cakes/image_2023-06-03_112311797.png
-description: dont fk around
-comment: dont change
+description: cake. are you happy anav
+comment: huh?? are you happy
 tags: classic
 price:
-  - '1'
-  - '2'
-  - '3'
+  - $1
+  - $2
+  - $3
 ing:
-  - admin' OR ‘1’=‘1
+  - huh
+  - are
+  - you
+  - happy
+  - now
 diet:
   - gluten free
+  - ass juice
 layout: ../../layouts/CakePreview.astro
 ---
 
