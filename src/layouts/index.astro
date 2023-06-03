@@ -1,23 +1,24 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from './Layout.astro';
 import Cake from '../components/Cake.astro';
 import Box from '../components/Box.astro';
 
 const cakes = await Astro.glob('../pages/cakes/*.md'); 
 const classicCakes = cakes.filter((post) => post.frontmatter.tags.includes("classic"));
 
-const seaseoon = "Valentines";
-const img = "/hero.jpg";
+const { frontmatter } = Astro.props;
 ---
 
 <Layout title="Rosy Hearts">
 
+<!-- <pre>{JSON.stringify(frontmatter, null, 2)}</pre> -->
+
 <div class=" h-90v relative flex items-center justify-center flex-col overflow-hidden">
-    <h1 class="mb-5 text-3xl md:text-6xl ">{seaseoon} Seasonal Store</h1>
+    <h1 class="mb-5 text-3xl md:text-6xl ">{frontmatter.season} Seasonal Store</h1>
    <div>
     <a href="/seasonal" class="text-lg md:text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>New Cakes</button></a>
     <a href="#classics" class="text-lg md:text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Classics</button></a>
-    <img src={img} alt="" class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10">
+    <img src={frontmatter.img} alt="" class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10">
    </div>
 </div>
 
