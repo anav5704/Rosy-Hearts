@@ -1,6 +1,6 @@
 ---
 name: rudr's cake
-img: /cakes/1.jpg
+img: /cakes/123.png
 description: 'Try it, you''ll love it'
 comment: 'PS: its a big one so might need 2 or 3 people to help you finish it'
 tags: classic
