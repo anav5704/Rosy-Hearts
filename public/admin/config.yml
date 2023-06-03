@@ -9,6 +9,7 @@ media_folder: "public/cakes" # Folder where user uploaded files should go
 public_folder: "/cakes"
 
 collections: # A list of collections the CMS should be able to edit
+
   - name: "cake" # Used in routes, e.g., /admin/collections/:slug/edit
     label: "Cake" # Used in the UI, e.g., "New Post"
     folder: "src/pages/cakes" # The path to the folder where the documents are stored
@@ -25,7 +26,6 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Dietary Information", name: "diet", widget: "list", default: ["4 deitary facts seperated by commas (,)"]}
       - {label: "Layout", name: "layout", widget: "string", default: "../../layouts/CakePreview.astro"}    
 
-collections: # A list of collections the CMS should be able to edit
   - name: "season" # Used in routes, e.g., /admin/collections/:slug/edit
     label: "Season" # Used in the UI, e.g., "New Post"
     folder: "src/pages/" # The path to the folder where the documents are stored
