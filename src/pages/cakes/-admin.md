@@ -3,7 +3,7 @@ name: '''admin--'
 img: /cakes/image_2023-06-03_112311797.png
 description: dont fk around
 comment: dont change
-tags: classic
+tags: league
 price:
   - '1'
   - '2'
