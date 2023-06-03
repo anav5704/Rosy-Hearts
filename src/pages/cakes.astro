@@ -6,9 +6,6 @@ const cakes = await Astro.glob('../pages/cakes/*.md');
 const classicCakes = cakes.filter((post) => post.frontmatter.tags.includes("classic"));
 const seasonalCakes = cakes.filter((post) => post.frontmatter.tags.includes("seasonal"));
 const leagueCakes = cakes.filter((post) => post.frontmatter.tags.includes("league"));
-
-const seaseoon = "Valentines";
-
 ---
 
 <Layout title="Rosy Hearts">
@@ -17,7 +14,7 @@ const seaseoon = "Valentines";
 {leagueCakes.map((cake) => <Cake {cake}/>)}
 </div>
 
-<h1 class="mb-5 mt-10 text-3xl text-center">Our <span class="rosy"> {seaseoon} </span>Cakes</h1>
+<h1 class="mb-5 mt-10 text-3xl text-center">Our <span class="rosy"> Seasonal </span>Cakes</h1>
 <div class="cakes grid grid-cols-1 md:grid-cols-3 w-4/5 m-auto gap-5">
 {seasonalCakes.map((cake) => <Cake {cake}/>)}
 </div>
