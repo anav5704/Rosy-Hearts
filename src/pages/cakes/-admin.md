@@ -1,6 +1,6 @@
 ---
 name: Rudrs Cake
-img: /cakes/123.png
+img: /cakes/9.jpg
 description: cake. are you happy anav
 comment: huh?? are you happy
 tags: league
