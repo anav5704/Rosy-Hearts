@@ -24,3 +24,11 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Ingredients", name: "ing", widget: "list", default: ["4 ingredients seperated by commas (,)"]}
       - {label: "Dietary Information", name: "diet", widget: "list", default: ["4 deitary facts seperated by commas (,)"]}
       - {label: "Layout", name: "layout", widget: "string", default: "../../layouts/CakePreview.astro"}    
+
+collections: # A list of collections the CMS should be able to edit
+  - name: "season" # Used in routes, e.g., /admin/collections/:slug/edit
+    label: "Season" # Used in the UI, e.g., "New Post"
+    folder: "src/pages/" # The path to the folder where the documents are stored
+    fields: # The fields each document in this collection have
+      - {label: "Season", name: "season", widget: "string"}
+      - {label: "Image", name: "img", widget: "image"}
