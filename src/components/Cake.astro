@@ -12,6 +12,7 @@ const { cake } = Astro.props;
             src={cake.frontmatter.img} 
             alt={cake.frontmatter.alt}  
             aspectRatio={3/2}
+            loading="lazy"
             format="avif"
             height={223}
             fit="cover"
