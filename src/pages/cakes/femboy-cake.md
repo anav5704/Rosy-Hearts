@@ -3,7 +3,7 @@ name: Femboy Cake
 img: /cakes/c3cb258b12aef197fbf31eade2cd76fb.jpg
 description: This cake bussin
 comment: ;)
-tags: classic
+tags: league
 price:
   - '34.99'
   - '44.95'
