@@ -9,19 +9,19 @@
 }
 
 * {
-    font-family: 'ABCYa', sans-serif;
     font-display: swap;
+    font-family: 'ABCYa', sans-serif;
     scroll-behavior: smooth;
                                                 
 }
 
 .rosy {
+    font-display: swap;
     background:var(--pink) ;
     background: linear-gradient(to right,var(--pink)  0%, var(--red) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Leckerli One', cursive;
-    font-display: swap
 }
 
 .lit {
