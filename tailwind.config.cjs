@@ -3,11 +3,6 @@ module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
 	theme: {
 		extend: {
-            
-            fontFamily: {
-                test: ['Gloria Hallelujah']
-            },
-
             height: {
                 "10v": "10vh",
                 "20v": "20vh",
