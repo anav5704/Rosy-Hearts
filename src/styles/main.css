@@ -10,6 +10,7 @@
 
 * {
     font-family: 'ABCYa', sans-serif;
+    font-display: swap;
     scroll-behavior: smooth;
                                                 
 }
@@ -20,6 +21,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-family: 'Leckerli One', cursive;
+    font-display: swap
 }
 
 .lit {
