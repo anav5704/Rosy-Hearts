@@ -14,9 +14,9 @@ const { frontmatter } = Astro.props;
 
 <!-- <pre>{JSON.stringify(frontmatter, null, 2)}</pre> -->
 
-<div class=" h-90v relative flex items-center justify-center flex-col overflow-hidden">
-    <h1 class="mb-5 text-3xl md:text-6xl ">{frontmatter.season} Seasonal Store</h1>
-        <div>
+<div class=" h-90v relative flex items-center justify-center flex-col overflow-hidden hero">
+    <h1 class="mb-5 text-3xl md:text-6xl z-20">{frontmatter.season} Seasonal Store</h1>
+        <div class="z-10">
         <a href="/seasonal" class="text-lg md:text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>New Cakes</button></a>
         <a href="#classics" class="text-lg md:text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Classics</button></a>
         <Image
@@ -27,8 +27,9 @@ const { frontmatter } = Astro.props;
         height= {1080}
         width= {1920}
         />
-   </div>
+    </div> 
 </div>
+
 
 <h1 class="mb-5 mt-10 text-3xl text-center">The<span class="rosy"> Home </span>of Cakes</h1>
 
@@ -58,6 +59,13 @@ const { frontmatter } = Astro.props;
 
 </Layout>
 
+<style>
+    
+.hero {
+    background: #FD9CC5;
+    background: linear-gradient(0deg, white 0%, rgb(255, 177, 190) 100%);
+}
+</style>
 
 <script>
     declare global {
