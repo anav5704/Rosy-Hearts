@@ -2,6 +2,7 @@
 layout: "../../layouts/CakePreview.astro"
 name: Fruit Cake
 img: "/cakes/3.jpg"
+alt: image of a cake
 description: Chocolate cake w oranges
 comment: Not real oranges, its candy lol
 price: [$34.99, $44.99, $54.99]

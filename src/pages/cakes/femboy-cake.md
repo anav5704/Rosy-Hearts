@@ -1,6 +1,7 @@
 ---
 name: Femboy Cake
 img: /cakes/c3cb258b12aef197fbf31eade2cd76fb.jpg
+alt: image of a cake
 description: This cake bussin
 comment: ;)
 tags: league

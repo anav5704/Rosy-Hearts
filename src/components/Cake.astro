@@ -1,10 +1,23 @@
 ---
+import { Image } from '@astrojs/image/components';
+
 const { cake } = Astro.props;
 ---
 
 <div class="cake col-span-1 lift rounded-lg overflow-hidden flex flex-col justify-between relative">
     <div class="h-56 load overflow-hidden ">
-        <a href={cake.url} class=""><img src={cake.frontmatter.img} alt="" class="h-full w-full object-cover object-top"></a>
+        <a href={cake.url} class="">
+            <Image 
+            class="lift m-auto"
+            src={cake.frontmatter.img} 
+            alt={cake.frontmatter.alt}  
+            aspectRatio={3/2}
+            format="avif"
+            height={223}
+            fit="cover"
+            position="center"
+            />
+        </a>
     </div>
     <div class= "p-2">
         <p>{cake.frontmatter.name}</p>

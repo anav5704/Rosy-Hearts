@@ -1,6 +1,7 @@
 ---
 name: Rudr Cake (GAY)
 img: /cakes/8.jpg
+alt: image of a cake
 description: This cake was inspired by rudy boy
 comment: 'Gayness aside. its a nice cock, I mean cake.'
 tags:

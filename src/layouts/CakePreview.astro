@@ -3,6 +3,7 @@ import '../styles/main.css';
 import Nav from '../components/Nav.astro';
 import Footer from '../components/Footer.astro';
 import Price from '../components/Price.astro';
+import { Image } from '@astrojs/image/components'
 
 const { frontmatter } = Astro.props;
 ---
@@ -21,7 +22,16 @@ const { frontmatter } = Astro.props;
         <Nav></Nav>
         <h1 class="text-3xl text-center mb-5 mt-10">{frontmatter.name}</h1>
        <div class="relative ">
-            <div class="w-4/12 h-80 m-auto rounded-lg lift overflow-hidden"><img class="w-full h-full object-cover object-top" src={frontmatter.img} alt="" ></div>
+                <Image 
+                class="lift m-auto rounded-lg"
+                src={frontmatter.img} 
+                alt={frontmatter.alt}  
+                aspectRatio={3/2}
+                format="avif"
+                height={280}
+                fit="cover"
+                position="center"
+                />
             <div class="md:block hidden comment absolute w-40 top-1/2 -translate-y-1/2 right-1/6">
                 <p class="p-2">{frontmatter.comment}</p>
                 <img src="/icons/arrow.png" alt="" class="rotate-180 h-20 w-20 ">

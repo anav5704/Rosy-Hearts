@@ -2,6 +2,7 @@
 layout: "../../layouts/CakePreview.astro"
 name: Chocolate Cake
 img: "/cakes/2.jpg"
+alt: image of a cake
 description: Goofy ah custom name lol
 comment: Its alright, can be better
 price: [$34.99, $44.99, $54.99]

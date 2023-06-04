@@ -2,6 +2,7 @@
 layout: "../../layouts/CakePreview.astro"
 name: strawberry Delight 
 img: "/cakes/6.jpg"
+alt: image of a cake
 description: White forest but way better
 comment: This one is a massive  hit or miss
 price: [$34.99,  $44.99,  $54.99]

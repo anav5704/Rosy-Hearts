@@ -1,8 +1,19 @@
 ---
-const {icon, text} = Astro.props;
+import { Image } from '@astrojs/image/components';
+const {icon, alt, text} = Astro.props;
 ---
 
 <div class="p-3 mt-12 md:mt-0 col-span-1 relative rounded-lg lift lit">
-    <div class=" lit rounded-full h-24 w-24 absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 grid items-center justify-center"><img src={icon} alt="" class="h-14 w-14"></div>
+    <div class=" lit rounded-full h-24 w-24 absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 grid items-center justify-center">
+        <Image 
+        src={icon} 
+        alt={alt}  
+        aspectRatio={1/1}
+        format="avif"
+        width={60}
+        fit="cover"
+        position="center"
+        />
+    </div>
     <p class="mt-12 ">{text}</p>
 </div>

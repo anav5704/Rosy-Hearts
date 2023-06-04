@@ -2,6 +2,7 @@
 layout: "../../layouts/CakePreview.astro"
 name: Bundt cake
 img: "/cakes/4.jpg"
+alt: image of a cake
 description: Tastes better than it looks
 comment: Our hidden gem, a top tier cake
 price: [$34.99,  $44.99,  $54.99]
