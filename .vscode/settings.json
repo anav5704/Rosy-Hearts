@@ -1,0 +1,77 @@
+{
+    "frontMatter.taxonomy.contentTypes": [
+        {
+            "name": "default",
+            "pageBundle": false,
+            "fields": [
+                {
+                    "title": "name",
+                    "name": "name",
+                    "type": "string"
+                },
+                {
+                    "title": "img",
+                    "name": "img",
+                    "type": "string"
+                },
+                {
+                    "title": "alt",
+                    "name": "alt",
+                    "type": "string"
+                },
+                {
+                    "title": "description",
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "title": "comment",
+                    "name": "comment",
+                    "type": "string"
+                },
+                {
+                    "title": "tags",
+                    "name": "tags",
+                    "type": "tags"
+                },
+                {
+                    "title": "price",
+                    "name": "price",
+                    "type": "choice",
+                    "choices": [
+                        "$34.99",
+                        "$44.99",
+                        "$54.99"
+                    ]
+                },
+                {
+                    "title": "ing",
+                    "name": "ing",
+                    "type": "choice",
+                    "choices": [
+                        "Whipped cream",
+                        "Cherries (pitted)",
+                        "Cherry syrup",
+                        "Dark chocolate"
+                    ]
+                },
+                {
+                    "title": "diet",
+                    "name": "diet",
+                    "type": "choice",
+                    "choices": [
+                        "Contains gluten",
+                        "Contains dairy",
+                        "Contains eggs",
+                        "May contain nuts"
+                    ]
+                },
+                {
+                    "title": "layout",
+                    "name": "layout",
+                    "type": "string"
+                }
+            ]
+        }
+    ]
+}
