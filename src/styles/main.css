@@ -6,14 +6,14 @@
     @font-face {
       font-family: ABCYa;
       font-weight: 400;
-      src: url(/fonts/abcya_font.woff) format("woff");
       font-display: swap;
+      src: url(/fonts/abcya_font.woff) format("woff");
     }
     @font-face {
         font-family: Leckerli One;
         font-weight: 400;
-        src: url(/fonts/Leckerli_One) format("ttf");
         font-display: swap;
+        src: url(/fonts/LeckerliOne-Regular.woff) format("woff");
       }
   }
 
@@ -24,12 +24,10 @@
 
 * {
     font-family: 'ABCYa', sans-serif;
-    scroll-behavior: smooth;
-                                                
+    scroll-behavior: smooth;                                            
 }
 
 .rosy {
-    font-display: swap;
     background:var(--pink) ;
     background: linear-gradient(to right,var(--pink)  0%, var(--red) 100%);
     -webkit-background-clip: text;
