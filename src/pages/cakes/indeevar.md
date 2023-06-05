@@ -6,6 +6,8 @@ comment: plein
 tags: league
 price:
   - 1 ballsack
+  - 2 ballsacks
+  - 3 ballsacks
 ing:
   - woos
 diet:
