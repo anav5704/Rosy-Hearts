@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Leckerli+One&display=swap');
 @tailwind components;
 @tailwind utilities;
 @tailwind base;
@@ -10,6 +9,12 @@
       src: url(/fonts/abcya_font.woff) format("woff");
       font-display: swap;
     }
+    @font-face {
+        font-family: Leckerli One;
+        font-weight: 400;
+        src: url(/fonts/Leckerli_One) format("ttf");
+        font-display: swap;
+      }
   }
 
 :root {
