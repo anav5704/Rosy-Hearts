@@ -15,18 +15,18 @@ const { frontmatter } = Astro.props;
 <!-- <pre>{JSON.stringify(frontmatter, null, 2)}</pre> -->
 
 <div class=" h-90v relative flex items-center justify-center flex-col overflow-hidden">
+    <Image
+    class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10"
+    src={frontmatter.img} 
+    alt={frontmatter.alt} 
+    format="avif"
+    height= {1080}
+    width= {1920}
+    />
     <h1 class="mb-5 text-3xl md:text-6xl z-20">{frontmatter.season} Seasonal Store</h1>
-        <div class="">
+    <div class="">
         <a href="/seasonal" class="text-lg md:text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>New Cakes</button></a>
         <a href="#classics" class="text-lg md:text-xl rosyy py-2 px-4 m-2 bg-white text-white"><button>Classics</button></a>
-        <Image
-        class="absolute w-full h-full object-cover top-0 left-0 object-center -z-10"
-        src={frontmatter.img} 
-        alt={frontmatter.alt} 
-        format="avif"
-        height= {1080}
-        width= {1920}
-        />
     </div> 
 </div>
 
