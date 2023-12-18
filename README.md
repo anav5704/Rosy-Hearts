@@ -11,7 +11,7 @@ This is a simple concept website made for a Fiji based bakery, Rosy Hearts. Cake
 
 ## Getting Started
 
-First fork and clone the repo. First run ```npm install``` to download all the dependencies. Once that is done, run ```npm start``` to view it on localhost.## Learning Resources.
+First fork and clone the repo. First run ```npm install``` to download all the dependencies. Once that is done, run ```npm start``` to view it on localhost.
 
 ## Learning Resources
 
