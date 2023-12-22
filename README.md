@@ -2,7 +2,7 @@
 
 ![hero](https://github.com/anav5704/Rosy-Hearts/blob/main/docs/rosy-hearts.png)
 
-This is a simple concept website made for a Fiji based bakery, Rosy Hearts. Cakes can be added via Netlify CMS and their identity service. All the images and markdown content is stored within the  main directory but load times are fast due to Astros build in image component.
+This is a simple concept website made for a Fiji-based bakery, Rosy Hearts. Cakes can be added via Netlify CMS and their identity service. All the images and markdown content are stored within the  main directory but load times are fast due to Astros built-in image component.
 
 ## Technologies Used
 
