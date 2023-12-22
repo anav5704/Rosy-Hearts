@@ -11,10 +11,11 @@ This is a simple concept website made for a Fiji-based bakery, Rosy Hearts. Cake
 
 ## Getting Started
 
-First fork and clone the repo. First run ```npm install``` to download all the dependencies. Once that is done, run ```npm start``` to view it on localhost.
+First fork and clone the repo. Then, run ```npm install``` to download all the dependencies. Once that is done, run ```npm start``` to view it on localhost.
 
 ## Learning Resources
 
 - [Astro JS crash course](https://www.youtube.com/watch?v=zrPVTf761OI)
-- [Astro JS docs](https://docs.astro.build/en/getting-started)
 - [TailwindCSS docs](https://tailwindcss.com/docs/installation)
+- [Astro JS docs](https://docs.astro.build/en/getting-started)
+
